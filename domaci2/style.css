@@ -1,0 +1,87 @@
+#tabela0{
+    border-collapse: collapse;
+    background-color: aqua;
+}
+#tabela0 tr{
+    width: 150px;
+    height: 50px;
+    border: 4px dotted black;
+ }
+#tabela0 th{
+    width: 150px;
+    height: 50px;
+    border: 4px solid white;
+}
+
+
+
+#tabela1{
+    border: 2px solid black;
+    padding: 4px;
+}
+#tabela1 tr{
+    width: 150px;
+    height: 50px;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+#tabela1 th{
+    width: 150px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+
+
+#tabela2 tr{
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid black;
+ }
+#tabela2 th{
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid black;
+ }
+
+
+
+#tabela3{
+    border-collapse: collapse;
+}
+#tabela3 tr{
+    width: 150px;
+    height: 50px;
+    border: 4px dotted black;
+ }
+#tabela3 th{
+    width: 150px;
+    height: 50px;
+    border: 4px dotted black;
+ }
+
+
+
+
+#tabela4{
+    border-collapse: collapse;
+}
+#tabela4 tr,th{
+    width: 150px;
+    height: 35px;
+    border: 1px solid black;
+}
+
+
+
+#tabela5{
+    border-collapse: collapse;
+}
+#tabela5 tr,th{
+    width: 100px;
+    height: 35px;
+    border: 1px solid black;
+}
