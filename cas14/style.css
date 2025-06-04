@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:link{
+    color: red;
+}
+/* posecena stranica */
+a:visited{
+    color: green;
+}
+a:hover{
+    color: hotpink;
+}
+a:active{
+    color: blue;
+}
+h1::before{
+    content: "BEFORE";
+}
+h1::after{
+    content: "AFTER";
+}
+
+
+#overflowTest{
+    background-color: aquamarine;
+    color: black;
+    padding: 15px;
+    width: 250px;
+    height: 150px;
+    /* overflow: scroll; */
+    /* overflow-x: hidden; */
+    overflow-y: scroll;
+    font-size: larger;
+    border: 1px solid black;
+}
+
+
+
+
+
+.hidden{
+    box-shadow: 10px 10px 10px gray;
+    display: none;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    background-color: gray;
+}
+.container:hover .hidden{
+    display: block;
+    margin-top: 10px;
+}
