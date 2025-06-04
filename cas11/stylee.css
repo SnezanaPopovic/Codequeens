@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(246, 246, 236);
+}
+.container{
+    background-color: aqua;
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+}
+
+.left{
+    background-color: white;
+    width: 50%;
+    display: inline-block;
+}
+.right{
+    background-color: rgb(95, 189, 157);
+    width: 50%;
+    color: white;
+}
+h2{
+    margin-top: 30px;
+    text-align: center;
+}
