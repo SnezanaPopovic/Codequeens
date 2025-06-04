@@ -1,0 +1,21 @@
+button{
+    background-color: rgb(90, 189, 228);
+    color: white;
+    padding: 7px;
+}
+
+#ime{
+    margin-bottom: 20px;
+}
+#email{
+    margin-bottom: 20px;
+}
+#godine{
+    margin-bottom: 20px;
+}
+#datum{
+    margin-bottom: 20px;
+}
+#password{
+    margin-bottom: 20px;
+}
