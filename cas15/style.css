@@ -1,0 +1,485 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(28, 31, 40);
+}
+#header1{
+    position: sticky;
+    top: 0;
+}
+header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background-color: rgb(28, 31, 40);
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid gray;
+}
+
+.logo{
+    width: 260px;
+    height: 55px;
+    display: block;
+    }
+.hidden{
+    display: none;
+    width: 70px;
+    height: 25px;
+    position: relative;
+    top: -25px;
+    background-color: white;
+}
+.logo:hover .hidden{
+    display: inline-block;
+    right: 0;
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-left: 15px;
+    /* margin-bottom: 30px; */
+    /* margin-top: 10px; */
+}
+
+
+#search{
+    width: 330px;
+    height: 40px;
+    padding-left: 33px;
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    background-color: rgb(44, 48, 60);
+    z-index: 1;
+    color: white;
+}
+.right{
+    width: 355px;
+    height: 50px;
+    display: flex;
+    padding: 5px;
+}
+.first{
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: rgb(67, 234, 179);
+    cursor: pointer;    
+}
+.first:hover{
+    /* box-shadow: 0 0 15px rgb(68, 197, 178); */
+    box-shadow: 0px 5px 5px rgba(68, 197, 178, 0.6); /* X, Y, Blur, Boja */
+    transition: 0.2s;
+}
+.second:hover{
+    background-color: rgb(99, 97, 97);
+    color: white;
+}
+.third:hover{
+    background-color: rgb(99, 97, 97);
+}
+.fourth:hover{
+    background-color: rgb(99, 97, 97);
+}
+.second{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: rgb(55, 54, 54);
+    padding: 10px;
+    padding-top: 6px;
+    font-size: x-large;
+    cursor: pointer;
+    color: gray;
+}
+.fa-solid .fa-border-none{
+    color: gray; 
+}
+
+.third{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    padding-right: 20px;
+    border-radius: 10px;
+    background-color: rgb(55, 54, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: x-large;
+    cursor: pointer;
+}
+.div2{
+    width: 22px;
+    height: 18px;
+    border-radius: 5px;
+    padding: 3px;
+    position: relative;
+    left: 30px;
+    top: -15px;
+    background-color: rgb(198, 40, 177);
+    color: white;
+    font-size: x-small;
+}
+.fourth{
+    width: 150px;
+    height: 40px;
+    margin-left: 15px;
+    background-color: rgb(55, 54, 54);
+    border-radius: 10px;   
+    padding-top: 7px;
+    gap: 10px;
+    display: flex;
+    font-size: x-large;
+    cursor: pointer;
+}
+.sidebar{
+    width: 14%;
+    background-color: rgb(35, 38, 47);
+    height: 950px;
+    /* position: fixed; */
+    overflow: auto;
+    scrollbar-width: none;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+.content{
+    flex: 1;
+}
+h3{
+    padding: 5px;
+    color: rgb(114, 117, 135);
+    font-size: medium;
+    cursor: pointer;
+}
+.sidebar header{
+    background-color: rgb(35, 38, 47);
+}
+.newPost{
+    width: 170px;
+    height: 30px;
+    border-radius: 10px;
+    margin-left: 10px;
+    color: white;
+    text-align: center;
+    padding-top: 4px;
+    border: 1px solid white;
+    background-color: rgb(28, 31, 40);
+    cursor: pointer;
+}
+.newPost:hover{
+    box-shadow: 0px 5px 5px rgba(255, 255, 255, 0.4); 
+    transition: 0.2s;
+}
+.sidebar p{
+    cursor: pointer;
+    color: rgb(114, 117, 135);
+    display: inline-block; 
+    margin-left: 11px; 
+    margin-bottom: 10px; 
+    padding-top: 4px;
+}
+.div4{
+    display: inline-block;
+}
+.div4:hover{
+    width: 100%;
+    background-color:white;
+}
+.section{
+    width: 86%;
+    height: 800px;
+}
+.container{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+}
+.section header{
+    margin-top: 20px;
+    width: 100%;
+    height: 60px;
+    border: 0;
+}
+.leftt{
+    width: 50%;
+    height: 60px;
+    display: flex;
+}
+.rightt{
+    width: 50%;
+    height: 60px;
+    display: flex;
+}
+.firstt p{
+    margin-left: 150px;
+    margin-right: 20px;
+    width: 90px;
+    height: 30px;
+    margin-top: 15px;
+    text-align: center;
+    padding-top: 6px;
+    border-radius: 10px;
+    background-color:white;
+    color: black;
+    font-weight: 600;
+    border: 1px solid gray;
+}
+.secondd p{
+    margin-right: 20px;
+    width: 100px;
+    height: 30px;
+    margin-top: 15px;
+    text-align: center;
+    padding-top: 6px;
+    border-radius: 10px;
+    background-color: rgb(28, 31, 40);
+    color: rgb(114, 117, 135);
+    font-weight: 600;
+    border: 1px solid gray;
+}
+.thirdd p{
+    width: 150px;
+    height: 30px;
+    margin-top: 15px;
+    text-align: center;
+    padding-top: 6px;
+    border-radius: 10px;
+    background-color: rgb(28, 31, 40);
+    color: rgb(114, 117, 135);
+    font-weight: 600;
+    border: 1px solid gray;
+}
+.firstt p:hover{
+    color: black;
+    background-color: white;
+}
+.secondd p:hover{
+    color: black;
+    background-color: white;
+}
+.thirdd p:hover{
+    color: black;
+    background-color: white;
+}
+.ffirst{
+    margin-left: 40px;
+    width: 150px;
+    height: 30px;
+    margin-top: 15px;
+    text-align: center;
+    padding-top: 6px;
+    border-radius: 10px;
+    background-color: rgb(28, 31, 40);
+    color: rgb(114, 117, 135);
+    font-weight: 600;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.ssecond{
+    width: 160px;
+    height: 30px;
+    margin-top: 15px;
+    text-align: center;
+    padding-top: 6px;
+    border-radius: 10px;
+    background-color: rgb(44, 48, 60);
+    color: rgb(114, 117, 135);
+    font-weight: 600;
+    cursor: pointer;
+}
+.ffirst:hover{
+    color: black;
+    background-color: white;
+}
+.ssecond:hover{
+    color: black;
+    background-color: white;
+}
+#no:hover{
+    color: white;
+}
+
+.card{
+    width: 310px;
+    margin-top: 20px;
+    height: 340px;
+    margin-left: 40px;
+    background-color: rgb(44, 48, 60);
+    display: inline-block;
+    border-radius: 20px;
+}
+.card:hover .readPost{
+    border: 1px solid white;
+    display: inline-block;
+}
+.card:hover{
+    border: 1px solid white;
+}
+.card h2{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#img11{
+    width: 25px; 
+    height: 25px; 
+    border-radius: 5px; 
+    display: inline-block; 
+    margin: 10px; 
+    cursor: pointer;
+}
+#img12{
+    width: 25px; 
+    height: 25px; 
+    border-radius: 5px; 
+    display: inline-block; 
+    margin: 10px; 
+    cursor: pointer;
+}
+
+.readPost{
+    background-color: white;
+    width: 110px;
+    border-radius: 20px;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-left: 50px;
+    display: inline-block;
+    display: none;
+    font-weight: 600;
+    position: absolute;
+}
+.one{
+    width: 94px;
+    height: 30px;
+    margin-left: 10px;
+    padding-top: 7px;
+    background-color: rgba(145, 149, 173,0.3);
+    color: rgb(193, 196, 211);  
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+.one1{
+    width: 84px;
+    height: 30px;
+    margin-left: 170px;
+    padding-top: 6px;
+    background-color: rgba(145, 149, 173,0.3);
+    color: rgb(193, 196, 211);  
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    font-weight: 600;
+    cursor: pointer;
+}
+.one1:hover{
+    background-color: white;
+}
+.one2:hover{
+    background-color: white;
+}
+.one:hover{
+    background-color: white;
+}
+.one2{
+    width: 94px;
+    height: 30px;
+    margin-left: 20px;
+    padding-top: 6px;
+    background-color: rgba(145, 149, 173,0.3);
+    color: rgb(193, 196, 211);  
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+
+}
+.div:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.caard{
+    width: 320px;
+    height: 350px;
+    background-color: aliceblue;
+    margin: 50px;
+    padding: 10px;
+    border-radius: 15px;
+    display: none;
+    position: absolute;
+}
+.kocka1{
+    display: inline-block;
+}
+.kocka1:hover .caard {
+    display: inline-block;
+    position: relative;
+    left: -100px;
+    top: -50px;
+}
+.caard .blok{
+    width: 300px;
+    height: 330px;
+    border-radius: 15px;
+    background-color: white;
+    border: 1px solid black;
+}
+#hiddenIMG{
+    width: 95%;
+    margin: 8px;
+    height: 100px;
+    border-radius: 15px;
+}
+.caard .linija0{
+    background-color: rgb(26, 28, 60);
+    height: 50px;
+    width: 95%;
+    margin: 8px;
+    margin-bottom: 0px;
+    position: relative;
+    top: -40px;
+    border-radius: 15px;
+    display: flex;
+    padding: 9px;
+    justify-content: space-between;
+}
+.caard h4{
+    color: white;
+    display: inline-block;
+    justify-content: space-between;
+}
+.caard h2{
+    color: black;
+    position: relative;
+    top: -30px;
+    padding-left: 20px;
+}
+.caard p{
+    color: black;
+    position: relative;
+    top: -30px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+.caard hr{
+    position: relative;
+    top: -30px;
+    width: 90%;
+    margin: auto;
+}
