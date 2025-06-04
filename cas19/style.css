@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    animation: okret 3s alternate infinite;
+    animation-fill-mode: none;
+    animation-play-state: paused;
+}
+.box:hover{
+    animation-play-state: running;
+}
+@keyframes okret {
+    0%{
+    }
+    50%{
+        scale: 1.5;
+        border-radius: 0;
+        rotate: 0;
+    }
+    100%{
+        scale: 1.5;
+        border-radius: 50%;
+        rotate: 360deg;
+    }
+}
