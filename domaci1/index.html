@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registracija</title>
+</head>
+<body>
+    <form>
+        <h2>Registracija</h2>
+        <label for="ime">Korisnicko ime:</label>
+        <br>
+        <input type="text" name="ime" id="ime" placeholder="Unesite vase korisnicko ime" minlength="5" required>
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" name="email" id="email" placeholder="mora sadržati @">
+        <br>
+        <br>
+        <label for="brTel">Broj telefona:</label>
+        <br>
+        <input type="tel" name="brTel" id="brTel" placeholder="mora sadržati tačno 10 cifara" pattern="\d{10}" required>
+        <br>
+        <br>
+        <label for="sifra">Sifra:</label>
+        <br>
+        <input type="password" name="sifra" id="sifra" placeholder="minimum 8 karaktera" minlength="8" required>
+        <br>
+        <br>
+        <label for="kategorija">Izbor kategorije korisnika:</label>
+        <br>
+        <input type="radio" name="kategorija" id="Student">
+        <label for="Student">Student</label>
+        <br>
+        <input type="radio" name="kategorija" id="Profesionalac">
+        <label for="Profesionalac">Profesionalac</label>
+        <br>
+        <input type="radio" name="kategorija" id="Ostalo">
+        <label for="Ostalo">Ostalo</label>
+        <br>
+        <br>
+        <label for="interesovanja">Oblasti interesovanja:</label>
+        <br>
+        <input type="checkbox" name="interesovanja" id="WebRazvoj">
+        <label for="WebRazvoj">Web razvoj</label>
+        <br>
+        <input type="checkbox" name="interesovanja" id="DataScience">
+        <label for="DataScience">Data Science</label>
+        <br>
+        <input type="checkbox" name="interesovanja" id="UX/UIdizajn">
+        <label for="UX/UIdizajn">UX/UI Dizajn</label>
+        <br>
+        <input type="checkbox" name="interesovanja" id="ITbezbednost">
+        <label for="ITbezbednost">IT bezbednost</label>
+        <br>
+        <input type="checkbox" name="interesovanja" id="AImasinskoUcenje">
+        <label for="AImasinskoUcenje">AI i masinsko ucenje</label>
+        <br>
+        <br>
+        <br>
+        <input type="checkbox" name="prihvatam" id="uslov" required>
+        <label for="uslov">Prihvatam uslove koriscenja (obavezno)</label>
+
+        <br>
+        <br>
+        <button type="submit">Prijavi se</button>
+        <button type="reset">Resetuj formu</button>
+        
+    </form>
+</body>
+</html>
