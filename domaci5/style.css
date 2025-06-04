@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    display: flex;
+}
+.left{
+    width: 50%;
+    height: 729px;
+    background-color: white;
+    padding: 50px;
+    position: relative;
+    display: inline-block;
+}
+.right{
+    width: 50%;
+    height: 729x;
+    background-image: url(photo.jpg)
+}
+a{
+    font-size: x-large;
+    font-weight: bolder;
+}
+.left p{
+    opacity: 0.7;
+    margin-left: 150px;
+}
+.left h1{
+    margin-left: 150px;
+}
+.input1{
+    position: relative;
+    display: inline-block;
+}
+.input1 input{
+    width: 250px;
+    padding: 20px;
+    padding-right: 40px;
+}
+.input1 .icon{
+    position: absolute; 
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: grey;
+}
+.line-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 140px;
+    padding-top: 30px;
+}
+.line{
+    width: 127px;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+.text{
+    color: #888;
+    font-size: 14px;
+}
+.buttons{
+    display: flex; 
+    gap: 2px;
+    background-color: white;
+    margin-left: 160px;
+} 
+.left button{
+    width: 200px;
+    border: 1px solid gray;
+    background: none; 
+    color: white;
+    padding: 10px 35px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px; 
+    cursor: pointer;
+} 
+button img{
+    width: 20px;
+    height: 20px;
+} 
