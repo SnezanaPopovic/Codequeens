@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 60px;
+    box-shadow: 0px 0px 10px gray;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: rgb(249, 249, 249);
+}
+header h2{
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+.center{
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    width: 300px;
+    display: flex;
+    gap: 40px;
+    color: gray;
+}
+a:hover{
+    color: blue;
+}
+.bookNow{
+    background-color: rgb(87, 152, 198);
+    width: 110px;
+    height: 30px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 5px;
+    margin-right: 90px;
+}
+.bookNow:hover{
+    background-color: blue;
+}
+.container{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.container h1{
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.container p{
+    color: white;
+    font-size: x-large;
+}
+.red{
+    width: 170px;
+    text-align: center;
+    padding-top: 12px;
+    border-radius: 20px;
+    color: white;
+    height: 45px;
+    background-color: rgb(241, 55, 55);
+}
+.red:hover{
+    background-color: rgb(167, 56, 56);
+}
+.container2{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    background-color: rgb(249, 249, 249);
+    justify-content: center;
+}
+.card{
+    display: inline-block;
+    margin-top: 90px;
+    width: 350px;
+    height: 200px;
+    background-color: white;
+    box-shadow: 0px 5px 5px gray;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+.card:hover{
+    transform: translateY(-5px);
+    transition: ease 0.6s;
+}
+.img{
+    display: flex; 
+    justify-content: center;
+}
+h4{
+    margin-top: 20px;
+    text-align: center;
+}
+p{
+    padding: 20px;
+    text-align: center;
+    color: rgb(111, 104, 104);
+}
+footer {
+    height: 200px;
+    background: #2c3e50;
+    color: white;
+    /* padding: 3rem 1% 1rem; */
+    /* display: inline-block; */
+}
+.footer-content{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    padding: 20px 0 0 100px ;
+}
+.footer-content h4{
+    text-align: left;   
+}
+.left{
+    width: 50%;
+    height: 100px;
+}
+.left h4{
+    padding-bottom: 10px;
+}
+.right{
+    width: 50%;
+    height: 100px;
+}
+.right h4{
+    padding-bottom: 10px;
+}
+.right a{
+    text-decoration: none;
+    padding-right: 13px;
+    color: white;
+}
+.footer-bottom{
+    border-top: 1px solid gray;
+    width: 90%;
+    margin: auto;
+}
+.footer-bottom p{
+    color: white;
+}
+
+@media (max-width: 430px) {
+    header{
+        width: 100%;
+        height: 300px;
+        flex-direction: column;
+    }
+    header h2{
+        margin-left: 6px;
+        padding-top: 25px;
+    }
+    .center{
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+        gap: 20px;
+    }
+    .bookNow{
+        margin-left: 100px;
+        margin-bottom: 30px;
+    }
+    .container h1{
+        text-align: center;
+        margin-top: 100px;
+        font-size: 40px;
+        /* display: none; */
+    }
+    .container p{
+        font-size: larger;
+    }
+    .container2{
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container2 .card{
+        margin-left: 40px;
+        width: 350px;
+        height: 190px;
+        margin-top: 15px;
+    }
+    .container2 #img{
+        width: 10px;
+        height: 10px;
+    }
+    footer{
+        height: 250px;
+        font-size: smaller;
+    }
+    .footer-content{
+        flex-direction: column;
+        padding-left: 30px;
+        padding-top: 10px;
+    }
+    .footer-bottom{
+        position: relative;
+        top: 50px; 
+    }
+    .right{
+        width: 200px;
+    }
+}
