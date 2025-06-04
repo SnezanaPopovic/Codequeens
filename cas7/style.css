@@ -1,0 +1,60 @@
+/* h1{
+    background-color: antiquewhite;
+}
+h1:hover{
+    background-color: aqua;  
+}
+
+
+#id1{
+    background-color: antiquewhite;
+}
+
+#id1:hover{
+    background-color: aquamarine;
+}
+#id2{
+    background-color: antiquewhite;
+}
+
+#id2:hover{
+    background-color: yellow;
+}
+#id3{
+    background-color: antiquewhite;
+}
+
+#id3:hover{
+    background-color: pink;
+}
+#id4{
+    background-color: antiquewhite;
+}
+
+#id4:hover{
+    background-color:  plum;
+}
+#id5{
+    background-color: antiquewhite;
+}
+
+#id5:hover{
+    background-color: orange;
+} */
+
+
+/* input:focus{
+    background-color: plum;
+    border: 3px solid black;
+} */
+
+/* p:first-child{
+    background-color: pink;
+} */
+
+.container{
+    background-color: antiquewhite;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
