@@ -1,63 +1,33 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container{
-    display: flex;
-    height: 200px;
-    font-size: 40px;
-    background-color: gray;
-    justify-content: space-between;
-    padding: 0 20px;
-    align-items: center;
-    /* flex-wrap: wrap; 
-    align-content: center; */
-
+.container {
+  display: flex;
+  height: 200px;
+  font-size: 40px;
+  background-color: gray;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
 }
-.row{
-    /* height: 100px;
-    width: 100px; */
-    margin: 5px;
-    background-color: aqua;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
+.row {
+  margin: 5px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 
-.treci{
-    flex-grow: 3;
+.treci {
+  flex-grow: 3;
 }
-.drugi{
-    flex-grow: 5;
+.drugi {
+  flex-grow: 5;
 }
-.peti{
-    flex-basis: 100px;
+.peti {
+  flex-basis: 100px;
 }
-
-/* q     */
-
-/* .prvi{
-    order: 1;
-} */
-
-/* 213456 */
-/* .drugi{
-    order: 0;
-}
-.treci{
-    order: 2;
-}
-.cetvrti{
-    order: 3;
-}
-.peti{
-    order: 4;
-}
-.sesti{
-    order: 5;
-} */
-
-
