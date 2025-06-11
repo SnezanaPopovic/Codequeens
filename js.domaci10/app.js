@@ -91,10 +91,10 @@
 
 //10. Kombinuj brojeve tako da praviš broj (npr. [1, 2, 3] → 123).
 
-let niz = [1, 2, 3, 4];
+// let niz = [1, 2, 3, 4];
 
-const spojeniBroj = niz.reduce((akumulator, el) => {
-  return akumulator * 10 + el;
-}, 0);
-console.log(niz);
-console.log(spojeniBroj);
+// const spojeniBroj = niz.reduce((akumulator, el) => {
+//   return akumulator * 10 + el;
+// }, 0);
+// console.log(niz);
+// console.log(spojeniBroj);
