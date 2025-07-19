@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // -------------------- REDUCE --------------------
 
 //1.Izračunaj zbir svih brojeva.
@@ -99,7 +98,6 @@
 // }, 0);
 // console.log(niz);
 // console.log(spojeniBroj);
-=======
 // 1.
 //  Napravi objekat `auto` koji ima sledeća svojstva: marka, model, godina, boje (niz boja).
 //  - Dodaj svojstvo `vlasnik`
@@ -264,4 +262,3 @@
 // }
 // const najskuplji = najvecaCena(proizvodi);
 // console.log(najskuplji);
->>>>>>> 6d4079a (Domaci)
