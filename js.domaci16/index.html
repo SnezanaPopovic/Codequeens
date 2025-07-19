@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registracija</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Forma za registraciju</h1>
+
+    <form id="registerForm">
+      <label
+        >Ime:
+        <input type="text" id="ime" name="ime" />
+      </label>
+      <p id="greskaIme" class="greska">Ime mora imati bar 3 slova.</p>
+
+      <label
+        >Prezime:
+        <input type="text" id="prezime" name="prezime" />
+      </label>
+      <p id="greskaPrezime" class="greska">
+        Prezime ne sme imati više od 12 slova.
+      </p>
+
+      <label
+        >Email:
+        <input type="email" id="email" name="email" />
+      </label>
+      <p id="greskaEmail" class="greska">Email mora sadržati "@".</p>
+
+      <label
+        >Lozinka:
+        <input type="password" id="password" name="password" />
+      </label>
+      <p id="greskaLozinka" class="greska">
+        Lozinka mora imati bar 8 karaktera.
+      </p>
+
+      <label
+        >Potvrdi lozinku:
+        <input type="password" id="confirmPassword" />
+      </label>
+
+      <label
+        >Datum rođenja:
+        <input type="date" id="dob" name="dob" />
+      </label>
+      <p id="greskaDatum" class="greska">Morate imati najmanje 18 godina.</p>
+
+      <label>Pol:</label>
+      <label><input type="radio" name="gender" value="Muški" /> Muški</label>
+      <label><input type="radio" name="gender" value="Ženski" /> Ženski</label>
+
+      <label>
+        <input type="checkbox" id="terms" /> Prihvatam uslove korišćenja
+      </label>
+
+      <button type="submit">Registruj se</button>
+    </form>
+
+    <script src="app.js"></script>
+  </body>
+</html>

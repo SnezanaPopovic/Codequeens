@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="par">ajsa</p>
+    <p class="parKlasa">1</p>
+    <p class="parKlasa">2</p>
+    <p class="parKlasa">3</p>
+    <p class="parKlasa">4</p>
+
+    <div id="prviZadatak"></div>
+
+    <div>
+      <ul id="drugiZadatak">
+        <li></li>
+      </ul>
+    </div>
+
+    <div id="tekst">
+      vidljiv tekst
+      <span class="hidden">nevidljiv tekst</span>
+    </div>
+
+    <div id="zadatak6"></div>
+
+    <div id="zadatak7">
+      <p>helloo</p>
+    </div>
+    <button onclick="document.getElementById('tekst').remove()">
+      Obrisi dugme
+    </button>
+
+    <ul id="zadatak8">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+    </ul>
+
+    <div id="zadatak10"></div>
+
+    <h1 id="zadatak11"></h1>
+
+    <ul id="zadatak12">
+      <li>1</li>
+    </ul>
+
+    <button
+      onclick="const li = document.createElement('li');
+    li.textContent = '2';
+    document.getElementById('zadatak12').appendChild(li);"
+    >
+      Dodaj drugu stavku
+    </button>
+
+    <div id="zadatak13">tekst za brisanje</div>
+    <button
+      onclick="
+    document.getElementById('zadatak13').remove();"
+    >
+      Obrisi div
+    </button>
+
+    <div id="zadatak14"></div>
+
+    <ul id="zadatak15"></ul>
+
+    <ul id="zadatak16">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+    <button
+      onclick="document.getElementById('zadatak16').removeChild(document.getElementById('zadatak16').lastElementChild)"
+    >
+      Brisanje poslednjeg
+    </button>
+
+    <div id="zadatak17"></div>
+    <button onclick="document.getElementById('zadatak17').append('Kliknuto!')">
+      Klikni
+    </button>
+
+    <p id="zadatak18"></p>
+    <script src="app.js"></script>
+  </body>
+</html>
