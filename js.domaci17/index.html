@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>To-Do Lista</h1>
+    <form id="form">
+      <input
+        type="text"
+        id="unesiZadatak"
+        placeholder="Unesi zadatak"
+        required
+      />
+      <button type="submit">Dodaj</button>
+    </form>
+    <ul id="lista"></ul>
+    <button id="obrisi">Obrisi sve</button>
+
+    <h2>Pretraga</h2>
+    <input type="text" id="input" placeholder="Pretraži..." />
+    <button id="resetBtn">Resetuj pretragu</button>
+
+    <div id="imeForma">
+      <label for="username">Unesi svoje ime:</label>
+      <input type="text" id="username" />
+      <button id="sacuvajBtn">Sačuvaj</button>
+    </div>
+
+    <div id="pozdrav" style="display: none">
+      <p id="pozdravPoruka"></p>
+      <button id="izmeniBtn">Izmeni ime</button>
+    </div>
+
+    <h2>Izaberi omiljenu boju pozadine:</h2>
+    <button onclick="promeniBoju('blue')">Plava</button>
+    <button onclick="promeniBoju('gray')">Siva</button>
+    <button onclick="promeniBoju('yellow')">Zuta</button>
+    <button onclick="promeniBoju('pink')">Roze</button>
+
+    <br /><br />
+    <button onclick="resetujBoju()">Resetuj boju</button>
+
+    <script src="app.js"></script>
+  </body>
+</html>
