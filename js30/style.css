@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+.box {
+  text-align: center;
+  width: 370px;
+  height: 300px;
+  box-shadow: 1px 2px 18px;
+  background-color: rgb(225, 227, 228);
+  border-radius: 10px;
+}
+h1 {
+  padding-top: 30px;
+}
+#email,
+#password {
+  width: 260px;
+  height: 30px;
+}
+#submit {
+  width: 90px;
+  height: 40px;
+  font-size: 17px;
+  border-radius: 10px;
+}
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin: 5px 0;
+}
