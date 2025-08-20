@@ -88,26 +88,6 @@
 // getUserAndPosts(1);
 // getUserAndPosts(-1);
 
-//     5. Paralelno vs. sekvencijalno
-//     Napravi dve async funkcije:
-//     getDataSlow() – vraća Promise koji se reši posle 3 sekunde,
-//     getDataFast() – vraća Promise koji se reši posle 1 sekunde.
-//      Kreiraj testSequential gde se čeka jedna pa druga funkcija (trajanje 4 sekunde).
-//      Kreiraj testParallel gde koristiš Promise.all i meriš vreme (trajanje 3 sekunde).
-
-// async function getDataSlow() {
-//   await new Promise((resolve) => setTimeout(resolve, 3000));
-//   console.log("Gotovo cekanje usporene funkcije!");
-// }
-// async function getDataFast() {
-//   await new Promise((resolve) => setTimeout(resolve, 1000));
-//   console.log("Gotovo cekanje ubrzane funkcije!");
-// }
-
-// async function testSequential(){
-
-// }
-
 //     6. Mini zadatak – vežba sa loop-om
 
 //     Napravi async funkciju printNumbers koja:
@@ -138,21 +118,21 @@
 
 //      Bonus: ako nema rezultata, vrati "Nema postova za dati keyword".
 
-async function searchPosts(keyword) {
-  try {
-    const response = await fetch("https://jsonplaceholder.typicode.com/posts");
-    if (!response.ok) throw new Error("Greška pri dohvatanju postova");
-    const posts = await response.json();
+// async function searchPosts(keyword) {
+//   try {
+//     const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+//     if (!response.ok) throw new Error("Greška pri dohvatanju postova");
+//     const posts = await response.json();
 
-    const filtrirane = posts.filter((post) =>
-      post.title.toLowerCase().includes(keyword.toLOwerCase())
-    );
+//     const filtrirane = posts.filter((post) =>
+//       post.title.toLowerCase().includes(keyword.toLOwerCase())
+//     );
 
-    if (filtrirane.length === 0) {
-      return "Nema postova za dati keyword";
-    }
-  } catch (error) {
-    console.log("Greska", error.message);
-    return [];
-  }
-}
+//     if (filtrirane.length === 0) {
+//       return "Nema postova za dati keyword";
+//     }
+//   } catch (error) {
+//     console.log("Greska", error.message);
+//     return [];
+//   }
+// }
