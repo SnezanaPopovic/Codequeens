@@ -1,0 +1,5 @@
+Napravite select sa opcijama (“posts”, “users”, “comments”).
+Kada se promeni selekcija, useEffect treba da pozove odgovarajući endpoint API-ja (https://jsonplaceholder.typicode.com/${selected}) i prikaže podatke.
+Napravite brojač koji se automatski povećava svake sekunde dok je aktivan (isRunning = true).
+Koristite dugmad “Start” i “Stop”.
+Implementirajte useEffect koji upravlja intervalom i prekida ga kad se isRunning promeni.

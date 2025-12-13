@@ -1,0 +1,12 @@
+Napravi komponentu koja:
+ima state hobbies koji je niz (npr. ["reading", "gaming"]),
+ima input polje i dugme,
+kada korisnik upiše novi hobi i klikne dugme, 
+taj hobi se doda u niz i prikaže na ekranu.
+
+Dodaj validaciju:
+ako je input prazan, ne sme da se doda hobi,
+možeš da prikažeš poruku tipa "Please enter a hobby".
+
+Izmeni kod tako da ne može dva puta da se doda isti hobi. 
+Ako korisnik pokuša, prikaži poruku "That hobby already exists!".

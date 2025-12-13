@@ -1,0 +1,70 @@
+1️⃣ OSNOVNA RUTA I NAVIGACIJA
+   - Instalirajte react-router-dom (ako već nije instalirano)
+   - Napravite BrowserRouter u App.jsx
+   - Kreirajte Header komponentu sa navigacionim linkovima koristeći <Link>
+   - Linkovi treba da vode na: Home, Products, About, Contact
+
+2️⃣ NESTED ROUTES (Ugnježđene rute)
+   - Napravite Home komponentu koja koristi <Outlet />
+   - Unutar Home rute, napravite child rute:
+     * "/" - prikazuje osnovni sadržaj Home stranice
+     * "/home/dashboard" - prikazuje Dashboard komponentu
+     * "/home/settings" - prikazuje Settings komponentu
+   - Objasnite u komentarima kako Outlet radi
+
+3️⃣ PROTECTED ROUTES (Zaštićene rute)
+   - Napravite ProtectedRoute komponentu koja proverava autentifikaciju
+   - Provera: localStorage.getItem("isAuthenticated")
+   - Ako je korisnik autentifikovan → prikazuje <Outlet /> sa child rutama
+   - Ako nije → prikazuje poruku "Morate biti ulogovani da pristupite ovoj stranici"
+   - Zaštitite "/products" rutu sa ProtectedRoute
+   - Unutar "/products" napravite:
+     * index route - prikazuje listu proizvoda
+     * "/products/:id" - prikazuje detalje proizvoda (dinamička ruta)
+
+4️⃣ DINAMIČKE RUTE I useParams
+   - Napravite Products komponentu koja prikazuje listu proizvoda
+   - Svaki proizvod ima ID, naziv, cenu, opis
+   - Klikom na proizvod, navigirajte na "/products/:id"
+   - Napravite ProductDetails komponentu koja:
+     * Koristi useParams() da čita :id iz URL-a
+     * Pronalazi proizvod sa tim ID-jem
+     * Prikazuje detalje proizvoda
+   - Ako proizvod ne postoji, prikažite poruku "Proizvod nije pronađen"
+
+5️⃣ LAYOUT ROUTES
+   - Napravite ProductsLayout komponentu koja koristi <Outlet />
+   - Ova komponenta treba da prikaže:
+     * Header sa tekstom "NAŠI PROIZVODI"
+     * <Outlet /> gde će se prikazati child rute
+   - U App.jsx, koristite ProductsLayout kao parent rutu za "/products"
+
+6️⃣ INDEX ROUTE
+   - Napravite index route za "/products" koja prikazuje listu svih proizvoda
+   - Index route se prikazuje kada je URL tačno "/products" (bez dodatnih delova)
+
+7️⃣ DODATNI ZADACI (Bonus)
+   - Napravite dugme "Login" koje postavlja localStorage.setItem("isAuthenticated", "true")
+   - Napravite dugme "Logout" koje briše autentifikaciju
+   - Dodajte aktivnu klasu na linkove (koristite NavLink umesto Link)
+   - Napravite 404 stranicu koja se prikazuje za nepoznate rute
+
+📝 STRUKTURA KOMPONENTI:
+
+App.jsx
+├── BrowserRouter
+    ├── Header (navigacija)
+    └── Routes
+        ├── Route "/" → Home (sa Outlet)
+        │   ├── index → Home sadržaj
+        │   ├── "/home/dashboard" → Dashboard
+        │   └── "/home/settings" → Settings
+        │
+        ├── Route "/products" → ProtectedRoute → ProductsLayout (sa Outlet)
+        │   ├── index → Products lista
+        │   └── "/products/:id" → ProductDetails
+        │
+        ├── Route "/about" → About
+        ├── Route "/contact" → Contact
+        └── Route "*" → 404 stranica
+
